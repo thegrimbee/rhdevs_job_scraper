@@ -11,7 +11,9 @@ import time
 
 # Openai setup
 OPENAI_PROMPT = """Here are texts on a job application page, 
-                   please give out the meaningful job descriptions based on the page:\n"""
+                   please find out the important job descriptions 
+                   (i.e. the role, the responsibilities, the requirements, etc.) from the texts.
+                   Do not include irrelevant information from the website such as privacy policy"""
 OPENAI_KEY = os.getenv("OPENAI_KEY1")
 openai.api_key = OPENAI_KEY
 
